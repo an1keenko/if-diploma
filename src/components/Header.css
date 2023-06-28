@@ -5,7 +5,9 @@
 .header {
     min-height: 100vh;
     background-size: cover;
-    background: url('../assets/background.jpg') ;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header__main {
