@@ -14,7 +14,7 @@ export const Header = () => {
     <Box className="header" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <Box
         sx={{
-          padding: '40px 120px',
+          padding: '30px 90px',
           height: '50px',
           display: 'flex',
           justifyContent: 'space-between',
@@ -23,7 +23,7 @@ export const Header = () => {
           color: 'white',
         }}
       >
-        <Box sx={{ display: 'flex', gap: '80px' }}>
+        <Box sx={{ display: 'flex', gap: '60px' }}>
           <Typography variant="body1" color="white" sx={noWrap}>
             NEW ARRIVALS
           </Typography>
@@ -33,7 +33,7 @@ export const Header = () => {
         <Typography variant="h4" sx={{ fontWeight: '700' }}>
           MODNIKKY
         </Typography>
-        <Box sx={{ display: 'flex', gap: '80px' }}>
+        <Box sx={{ display: 'flex', gap: '60px' }}>
           <Typography variant="body1" sx={noWrap}>
             <Search />
             SEARCH
@@ -42,9 +42,7 @@ export const Header = () => {
             SIGN IN
           </Typography>
           <Typography variant="body1">BAG</Typography>
-          <Typography variant="body1">
-            <Wishlist />
-          </Typography>
+          <Wishlist />
         </Box>
       </Box>
       <Box sx={{ p: '150px 150px' }}>
@@ -53,7 +51,7 @@ export const Header = () => {
         </Typography>
         <Typography
           variant="body1"
-          sx={{ mt: '20px', maxWidth: '800px', width: '100%', fontSize: '24px', fontWeight: '400px' }}
+          sx={{ mt: '20px', maxWidth: '800px', width: '100%', fontSize: '24px', fontWeight: '400px', color: 'white' }}
         >
           Our easiest chuck-on-and-go staples come with a serious style heritage that’s liberating, sexy, comfy and
           supremely cool.

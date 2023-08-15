@@ -1,6 +1,15 @@
-export const Beauty = () => {
+import { IconProps } from './IconProps.ts'
+
+export const Beauty = ({ width = 24, height = 45, style = { marginRight: '16px' } }: IconProps) => {
   return (
-    <svg width="70" height="100" viewBox="0 0 70 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      style={style}
+      viewBox="0 0 70 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M67.4015 55.6436H64.7128V51.8243C64.7128 50.6085 63.7272 49.6228 62.5114 49.6228H44.5881C43.372 49.6228 42.3867 50.6085 42.3867 51.8243V55.6436H39.6977C38.4819 55.6436 37.4963 56.6292 37.4963 57.845V92.3508C37.4963 96.5687 40.9279 100 45.1458 100H61.954C66.1716 100 69.6032 96.5687 69.6032 92.3508V57.845C69.6029 56.6292 68.6172 55.6436 67.4015 55.6436ZM46.7895 54.026H60.31V55.6439H46.7895V54.026ZM65.2001 92.3508C65.2001 94.141 63.7439 95.5972 61.9537 95.5972H45.1455C43.3553 95.5972 41.8988 94.141 41.8988 92.3508V60.0464H65.1998L65.2001 92.3508Z"
         fill="currentColor"
