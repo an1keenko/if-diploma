@@ -19,11 +19,11 @@ const buttonStyle = {
 
 export const CategorySection = () => {
   return (
-    <Box sx={{ height: '780px' }}>
+    <>
       <Typography variant="h4" sx={{ textAlign: 'center', pt: '120px' }}>
         Shop by the <b>Category</b>
       </Typography>
-      <Box sx={{ display: 'flex', gap: '24px', justifyContent: 'center', pt: '80px' }}>
+      <Box sx={{ display: 'flex', gap: '24px', justifyContent: 'center', p: '80px 0 180px' }}>
         <Button sx={buttonStyle}>
           <Dress />
           Dresses
@@ -49,6 +49,6 @@ export const CategorySection = () => {
           Beauty
         </Button>
       </Box>
-    </Box>
+    </>
   )
 }
