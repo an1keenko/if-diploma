@@ -2,6 +2,7 @@ import { Box, Link, Typography } from '@mui/material'
 import Next from '../icons/Next.tsx'
 import { useEffect, useState } from 'react'
 import Container from './Container.tsx'
+import Loading from './Loading.tsx'
 
 interface Item {
   id: number
@@ -36,8 +37,9 @@ function MainSection() {
           </Typography>
         </Link>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', height: '630px', gap: 0 }}>
-        {items.length > 0 && (
+      {items.length === 0 && <Loading />}
+      {items.length > 0 && (
+        <Box sx={{ display: 'flex', justifyContent: 'center', height: '630px', gap: 0 }}>
           <Box style={{ display: 'flex' }}>
             <Box>
               <img
@@ -58,8 +60,8 @@ function MainSection() {
               ))}
             </Box>
           </Box>
-        )}
-      </Box>
+        </Box>
+      )}
       <Typography variant="subtitle2" sx={{ m: '30px 10px' }}>
         #MODNIKKY
       </Typography>
