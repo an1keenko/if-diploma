@@ -2,6 +2,7 @@ import './App.css'
 import { Header } from './components/Header.tsx'
 import { CategorySection } from './components/CategorySection.tsx'
 import SaleSection from './components/SaleSection.tsx'
+import MainSection from './components/MainSection.tsx'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <CategorySection />
       <SaleSection />
+      <MainSection />
     </>
   )
 }
