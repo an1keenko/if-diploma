@@ -5,6 +5,7 @@ import { Tess } from '../icons/Tess.tsx'
 import { Swimwear } from '../icons/Swimwear.tsx'
 import { Tops } from '../icons/Tops.tsx'
 import { Beauty } from '../icons/Beauty.tsx'
+import Container from './Container.tsx'
 
 const buttonStyle = {
   maxWidth: '200px',
@@ -19,7 +20,7 @@ const buttonStyle = {
 
 export const CategorySection = () => {
   return (
-    <>
+    <Container>
       <Typography variant="h4" sx={{ textAlign: 'center', pt: '120px' }}>
         Shop by the <b>Category</b>
       </Typography>
@@ -49,6 +50,6 @@ export const CategorySection = () => {
           Beauty
         </Button>
       </Box>
-    </>
+    </Container>
   )
 }

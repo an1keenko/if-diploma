@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { Box, Button, CircularProgress, Typography } from '@mui/material'
 import Arrow from '../icons/Arrow.tsx'
+import Container from './Container.tsx'
 
 interface SaleItem {
   id: number
@@ -65,7 +66,7 @@ function SaleSection() {
   }
 
   return (
-    <>
+    <Container>
       <Typography variant="h4" sx={{ textAlign: 'center' }}>
         #MODNIKKY_<b>Sale</b>
       </Typography>
@@ -85,7 +86,7 @@ function SaleSection() {
           <CircularProgress color="inherit" />
         </Box>
       )}
-      <Box sx={{ mt: '80px', p: '0 120px' }}>
+      <Box sx={{ mt: '80px' }}>
         {items.length > 0 && (
           <Slider {...settings}>
             {items.map((item) => (
@@ -115,7 +116,7 @@ function SaleSection() {
           </Slider>
         )}
       </Box>
-    </>
+    </Container>
   )
 }
 export default SaleSection
