@@ -33,7 +33,7 @@ function MainSection() {
         </Link>
         <Link href="#" underline="hover" color="#000F08">
           <Typography variant="subtitle2">
-            SHOP <Next style={{ marginLeft: '10px' }} />
+            SHOP <Next style={{ marginLeft: '3px' }} />
           </Typography>
         </Link>
       </Box>
