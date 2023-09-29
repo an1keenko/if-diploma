@@ -34,7 +34,8 @@ function SaleSection() {
         setItems(itemsWithDiscount)
       })
       .catch((error) => console.error('Error:', error))
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const settings = {
     dots: false,
