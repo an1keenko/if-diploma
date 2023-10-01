@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { Box, Button, CircularProgress, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import Arrow from '../icons/Arrow.tsx'
 import Container from './Container.tsx'
+import Loading from './Loading.tsx'
 
 interface SaleItem {
   id: number
@@ -33,7 +34,8 @@ function SaleSection() {
         setItems(itemsWithDiscount)
       })
       .catch((error) => console.error('Error:', error))
-  })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const settings = {
     dots: false,
@@ -70,22 +72,7 @@ function SaleSection() {
       <Typography variant="h4" sx={{ textAlign: 'center' }}>
         #MODNIKKY_<b>Sale</b>
       </Typography>
-      {items.length === 0 && (
-        <Box
-          sx={{
-            height: '400px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            gap: '24px',
-          }}
-        >
-          <Typography variant="h4" color="inherit">
-            Loading...
-          </Typography>
-          <CircularProgress color="inherit" />
-        </Box>
-      )}
+      {items.length === 0 && <Loading />}
       <Box sx={{ mt: '80px' }}>
         {items.length > 0 && (
           <Slider {...settings}>

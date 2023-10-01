@@ -1,6 +1,6 @@
 import { IconProps } from './IconProps.ts'
 
-function Next({ width = 12, height = 12, style }: IconProps) {
+function Next({ width = 10, height = 10, style }: IconProps) {
   return (
     <svg width={width} height={height} style={style} viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
