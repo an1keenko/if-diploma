@@ -1,5 +1,5 @@
 import Container from './Container.tsx'
-import { Box, Typography } from '@mui/material'
+import { Box, Link, Typography } from '@mui/material'
 import React from 'react'
 
 const boxStyle = {
@@ -10,9 +10,9 @@ const boxStyle = {
 
 function FooterSection() {
   const createLink = (text: React.ReactNode) => (
-    <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Link href="#" color="inherit" underline="hover">
       {text}
-    </a>
+    </Link>
   )
 
   return (

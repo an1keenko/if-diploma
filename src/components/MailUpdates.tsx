@@ -44,30 +44,28 @@ function MailUpdates() {
           <Typography variant="subtitle2" sx={{ textAlign: 'center', mt: '8px' }}>
             Sign up for exclusive early sale access and tailored new arrivals.
           </Typography>
-          <form onSubmit={handleSubmit}>
-            <Box
-              component="form"
-              sx={{
-                m: '40px auto',
-                display: 'flex',
-                alignItems: 'center',
-                width: '600px',
-                borderBottom: '1px solid #D8D8D8',
-              }}
-            >
-              <InputBase
-                sx={{ ml: 1, flex: 1 }}
-                type="email"
-                placeholder="Your email address"
-                inputProps={{ 'aria-label': 'email address' }}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <IconButton type="button" sx={{ p: '10px' }} aria-label="join" onClick={handleSubmit}>
-                <Typography color="#000F08">JOIN</Typography>
-              </IconButton>
-            </Box>
-          </form>
+          <Box
+            component="form"
+            sx={{
+              m: '40px auto',
+              display: 'flex',
+              alignItems: 'center',
+              width: '600px',
+              borderBottom: '1px solid #D8D8D8',
+            }}
+          >
+            <InputBase
+              sx={{ ml: 1, flex: 1 }}
+              type="email"
+              placeholder="Your email address"
+              inputProps={{ 'aria-label': 'email address' }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <IconButton type="submit" sx={{ p: '10px' }} aria-label="join" onClick={handleSubmit}>
+              <Typography color="#000F08">JOIN</Typography>
+            </IconButton>
+          </Box>
         </>
       )}
     </Container>
